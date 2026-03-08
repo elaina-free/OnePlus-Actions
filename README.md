@@ -18,16 +18,16 @@
 
 ## KernelSU管理器支持
 
-支持 ``ReSukiSU`` / ``SukiSU Ultra`` / ``KernelSU Next`` / ``KernelSU Official``, 当然你也可以编译仅加入优化的 ``无 Root`` 内核
+支持 ``ReSukiSU`` ``SukiSU Ultra`` ``KernelSU Next`` ``KernelSU Official``, 当然你也可以编译仅加入优化的 ``无 Root`` 内核
 
 ## 使用指南
 
 ### ① 分支选择
 
 1. 点击 `Branches` 切换处理器分支
-2. 选择适合您设备的配置 [如下图，如果实在找不到代号名称去网上搜搜]
+2. 选择适合您设备的配置 (Tips: 如果实在找不到代号名称去网上搜搜)
 
-<img width="219" height="488" alt="image" src="https://github.com/user-attachments/assets/a62811aa-357d-4645-830c-002e7a7f6e03" />
+<img width="376" height="77" alt="{B57A09D0-EC2F-4B86-9821-9C6CAC6435CF}" src="https://github.com/user-attachments/assets/0f97b652-b1e4-484d-90c0-9e36bc15cdf0" />
 
 ### ② 配置文件说明
 
@@ -40,12 +40,12 @@
 
 ### ③ 配置开关建议
 
-- **SUSFS选项**：SUSFS在编译 ```各分支最新版上``` 已经改为可选，看你的需求进行开关 
-- **KPM选项**：仅在 ``SukiSU Ultra`` / ``ReSukiSU`` 上有，建议禁用以减少电量消耗，挂🐕去④
+- **SUSFS选项**：SUSFS在编译时已经改为可选，看你的需求进行开关。近期上游在拉💩💩💩, 建议关闭, 否则编译绝对报错
+- **KPM选项**：仅在 ``SukiSU Ultra`` ``ReSukiSU`` 支持开启，建议禁用以减少电量消耗，挂🐕去④
 - **lz4kd**：
   - ``6.1系``内核：建议关闭该选项以获得更好的 `lz4 + zstd` 压缩方式
   - ``6.6系``内核：建议关闭该选项以获得更好的 `lz4` 压缩方式
-  - 其他内核版本：建议保持开启
+  - ``5.10 - 5.15系``内核：建议保持开启
 - **BBR算法**：对手机日用无太大意义甚至可能``负优化``，推荐关闭
 - **BBG基带守护**: 推荐开启，看名字就知道是干啥的
 - **⚠️代理优化**: 骁龙芯片可以开，联发科芯片 `千万不要开` ，否则出现恶性Bug！
